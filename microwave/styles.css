@@ -33,7 +33,7 @@ hr {
   margin-left: 50%;
   margin-right: 50%;
 }
-
+/* Main side display*/
 .box-container {
   display: flex;
   border: 1px solid red;
@@ -42,6 +42,8 @@ hr {
 
 .screen {
   width: 800px;
+  padding-top: 100px;
+  text-align:center;
   border: 1px solid gold;
 }
 
@@ -50,12 +52,82 @@ hr {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  width:300px;
   border: 1px solid blue;
 }
 
 .display {
-  width:300px;
+  padding-top:40px;
   height: 100px;
   border: 1px solid red;
-  margin-top: 10px;
+  margin: 10px 0px 10px;
+  text-align: center;
+}
+
+.microwave-presets {
+  border: 1px solid dodgerblue;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+.preset-container {
+  border:1px solid hotpink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.preset {
+  border: 1px solid olive;
+}
+
+.express-cook {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.numbers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.numbers {
+  padding: 10px;
+}
+
+.controls {
+  display:flex;
+  justify-content: space-evenly;
+  border: 1px dashed blue
+}
+
+.off {
+  padding:10px;
+  text-align: center;
+  border: 1px dashed red;
+}
+
+#start-pause {
+  border: 1px dashed red;
+  padding: 10px;
+}
+
+#start-pause:hover {
+  background-color: goldenrod;
+}
+
+.microwave-features-title {
+  text-align: center;
+}
+
+.microwave-features-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features {
+  padding:10px;
 }
