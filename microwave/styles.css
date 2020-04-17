@@ -50,6 +50,12 @@ hr {
   text-align:center;
   border: 1px solid gold;
 }
+
+.door-handle {
+  padding-top: 200px;
+  text-align: center;
+}
+
 /* This is where all the controls live */
 .timer-container {
   display: flex;
