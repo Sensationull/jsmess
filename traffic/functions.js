@@ -1,20 +1,20 @@
-function green() {
-  let element = document.querySelector('.box-three');
-  element.style.backgroundColor = 'green';
-  removeStyle('green')
-}
+// function green() {
+//   let element = document.querySelector('.box-three');
+//   element.style.backgroundColor = 'green';
+//   removeStyle('green')
+// }
 
-function yellow() {
-  let element = document.querySelector('.box-two');
-  element.style.backgroundColor = 'yellow'
-  removeStyle('yellow')
-}
+// function yellow() {
+//   let element = document.querySelector('.box-two');
+//   element.style.backgroundColor = 'yellow'
+//   removeStyle('yellow')
+// }
 
-function red() {
-  let element = document.querySelector('.box-one');
-  element.style.backgroundColor = 'red'
-  removeStyle('red')
-}
+// function red() {
+//   let element = document.querySelector('.box-one');
+//   element.style.backgroundColor = 'red'
+//   removeStyle('red')
+// }
 
 function removeStyle(selector) {
   let el = document.querySelector('.big-box');
@@ -30,9 +30,24 @@ function removeStyle(selector) {
      item.style.backgroundColor = '';
    }
  }
-  // children.filter((item) => item !== `div.${selector}`)
-  console.log(children);
 }
+
+
+  setTimeout(function green() {
+  let element = document.querySelector('.box-three');
+  element.style.backgroundColor = 'green';
+  removeStyle('green')
+  setTimeout(function yellow() {
+    let element = document.querySelector('.box-two');
+    element.style.backgroundColor = 'yellow'
+    removeStyle('yellow')
+    setTimeout(function red() {
+      let element = document.querySelector('.box-one');
+      element.style.backgroundColor = 'red'
+      removeStyle('red')
+    }, 2000)
+  },3000)
+}, 5000)
 
 function hello() {
   console.log('yoooo')
