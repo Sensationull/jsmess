@@ -84,6 +84,10 @@ hr {
 .preset {
   border: 1px solid olive;
 }
+
+.preset:hover {
+  background-color: goldenrod;
+}
 /* Manually enter times here and other presets */
 .express-cook {
   margin-bottom: 10px;
@@ -101,6 +105,10 @@ hr {
   padding: 10px;
 }
 
+.numbers:hover {
+  background-color: goldenrod;
+}
+
 /* Start/Stop/Off buttons */
 .controls {
   display:flex;
@@ -109,7 +117,7 @@ hr {
   margin:10px 0px 10px;
 }
 
-.off {
+#off {
   padding:10px;
   text-align: center;
   border: 1px dashed red;
@@ -139,4 +147,8 @@ hr {
   padding:10px;
   border: 1px dashed sienna;
   margin: 5px;
+}
+
+.features:hover {
+  background-color: goldenrod;
 }
