@@ -64,6 +64,7 @@ hr {
   justify-content: center;
   width:300px;
   border: 1px solid blue;
+  background-color: silver;
 }
 /* Where you would see the time displayed */
 .display {
