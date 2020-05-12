@@ -1,11 +1,11 @@
-function hideBar() {
+function toggleBar() {
   let sidebar = document.querySelector('.sidebar');
-  sidebar.style.transition = '0.3'
-  sidebar.style.transform = 'translateX(-200px)'
-  
-}
-
-function showBar() {
-  let sidebar = document.querySelector('.sidebar');
-  sidebar.style.transform = 'translateX(0px)'
+  sidebar.classList.toggle('is-active');
+  console.log(sidebar.classList.contains('is-active'));
+  let text = document.querySelector('.button-text');
+  if(sidebar.classList.contains('is-active')) {
+    text.innerHTML = 'Open Menu'
+  } else {
+    text.innerHTML = 'Close Menu'
+  }
 }
