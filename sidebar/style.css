@@ -29,11 +29,13 @@
 .sidebar {
   display:flex;
   position: relative;
-  bottom: 150px;
+  top: -75px;
+  left:0;
   background: hsl(34, 97%, 64%);
   width: 200px;
   height: 100vh;
   justify-content:center;
+  transition: left 0.5s ease-in-out;
 }
 
 .sidebar ul {
@@ -42,4 +44,8 @@
 
 .sidebar ul li {
   padding: 10px;
+}
+
+.is-active {
+  left: -200px;
 }
