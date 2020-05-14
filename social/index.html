@@ -52,12 +52,16 @@
       width: 500px;
       height: 200px;
       background: turquoise;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
+    }
+
+
+    @keyframes fadein {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
 
     .fade-in {
-      opacity: 1;
+      -webkit-animation: fadein 2s;
     }
 
     .image {
@@ -76,26 +80,11 @@
       font-size: 28px;
     }
 
-    .preload {
-      -webkit-transition: var(--no-load);
-      -moz-transition: var(--no-load);
-      -ms-transition:var(--no-load);
-      -o-transition: var(--no-load);
-      transition: var(--no-load);
-    }
   </style>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-    let node = document.querySelector('.preload');
-    node.classList.remove('preload');
-    console.log(node);
-  });
-  </script>
 </head>
 <body class="preload">
   <section class="container">
     <header class="title">The Social Network</header>
-    <button onclick="addFade()">Show cards</button>
   </section>
   <section class="main"></section>
 </body>
