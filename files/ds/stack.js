@@ -1,4 +1,4 @@
-export default class Stack {
+class Stack {
     constructor () {
         this.stack = [];
     }
@@ -20,7 +20,7 @@ export default class Stack {
     }
 
     isEmpty() {
-        return this.stack.length === 0;
+        return this.length === 0;
     }
 
 
@@ -29,4 +29,6 @@ export default class Stack {
 let test = new Stack();
 // console.log(test.length());
 test.push(1);
+let what = test.isEmpty();
+console.log(what)
 // console.log(test.length());

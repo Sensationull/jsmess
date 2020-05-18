@@ -1,4 +1,4 @@
-export default class Queue {
+class Queue {
     constructor() {
         this.queue = [];
     }
@@ -20,7 +20,7 @@ export default class Queue {
     }
 
     isEmpty() {
-        return this.queue.length === 0;
+        return this.length === 0;
     }
 
     peek() {
