@@ -6,7 +6,12 @@ class Node {
 }
 
 class Graph {
-    constructor() {
-        
+    constructor(undirected = false) {
+        this.undirected = undirected;
+        this.nodes = [];
+    }
+
+    addNode(value) {
+        this.nodes.push(new Node(value));
     }
 }
