@@ -12,12 +12,26 @@
   --textSize: 32px;
 }
 
+body {
+  background-color: var(--backgroundColor);
+}
+
+.reset {
+  background: var(--backgroundColor);
+  color:var(--textColor);
+  border:3px solid var(--borderColor);
+  padding: 15px;
+}
+
+.reset:hover {
+  animation:switch-colors 0.3s forwards ease-in;
+}
+
 .main-container {
   display: flex;
   justify-content:center;
   align-items:center;
   height: 100vh;
-  background-color: var(--backgroundColor);
 }
 
 .content {
