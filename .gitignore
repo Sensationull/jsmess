@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#learnJS files
+learnJS/.DS_Store
+learnJS/files/
