@@ -16,6 +16,21 @@ const showLettuceContent = () => {
 
 lettuce.addEventListener('click', showLettuceContent);
 
+const tomato = document.querySelector('[data-theme="tomato"]');
+
+const showTomatoContent = () => {
+	tomato.classList.toggle('is-open');
+};
+
+tomato.addEventListener('click', showTomatoContent);
+
+const beef = document.querySelector('[data-theme="beef"]');
+
+const showBeefContent = () => {
+	beef.classList.toggle('is-open');
+};
+
+beef.addEventListener('click', showBeefContent);
 
 
 // for (let button of openButtons) {
