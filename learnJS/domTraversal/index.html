@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title></title>
+</head>
+<body>
+<div class="characters">
+  <ul class="hobbits">
+    <li>Frodo Baggins</li>
+    <li>Samwise "Sam" Gamgee</li>
+    <li>Meriadoc "Merry" Brandybuck</li>
+    <li>Peregrin "Pippin" Took</li>
+    <li>Bilbo Baggins</li>
+  </ul>
+  <ul class="humans">
+    <li>Gandalf</li>
+    <li>Saruman</li>
+    <li>Aragorn</li>
+    <li>Boromir</li>
+    <li>Faramir</li>
+  </ul>
+  <ul class="elves">
+    <li>Legolas</li>
+    <li>Glorfindel</li>
+    <li>Elrond</li>
+    <li>Arwen Evenstar</li>
+  </ul>
+  <ul class="enemies">
+    <li>Sauron</li>
+    <li>Nazgûl</li>
+  </ul>
+</div>
+
+  <script>
+/*
+    Select .characters with document.querySelector
+    Select .humans from .characters
+    Select all humans with querySelectorAll, starting from .humans
+    Select all hobbits with children
+    Select the Merry (the hobbit)
+    Select .elves from Merry
+    Select Glorfindel from .elves
+    Select Elrond from Glorfindel
+    Select Legolas from Glorfindel
+    Select the .characters div from Nazgûl
+*/
+const characters = document.querySelector('.characters');
+const humans = characters.querySelector('.humans');
+const allHumans = humans.querySelectorAll('li');
+
+// console.log('characters', characters)
+// console.log('humans', humans)
+// console.log('allHumans', allHumans)
+
+const hobbits = characters.children[0];
+const hobbitList = Array.from(hobbits.children);
+const merry = hobbitList[2];
+// console.log(merry);
+
+const elves = merry.closest('.hobbits').nextElementSibling.nextElementSibling;
+console.log(elves);
+const glorfindel = elves.children[1];
+const elrond = glorfindel.nextElementSibling;
+const legolas = glorfindel.previousElementSibling;
+console.log(glorfindel,elrond, legolas);
+
+const nazgul = document.querySelector('.enemies').children[1];
+console.log(nazgul)
+const nazToChars = nazgul.closest('.characters');
+console.log(nazToChars);
+  </script>
+</body>
+</html>
