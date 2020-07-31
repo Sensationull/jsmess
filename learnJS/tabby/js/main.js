@@ -17,7 +17,6 @@ tabs.forEach(tab => {
 				content.classList.toggle('is-selected');
 			}
 		}
-  
 	});
 });
 
