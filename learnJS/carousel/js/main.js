@@ -69,3 +69,9 @@ dots.forEach(dot => dot.addEventListener('click', event => {
 		previousButton.removeAttribute('hidden'); 
 	}
 }));
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+slides.forEach((slide, index) => {
+	slide.style.left = slideWidth * index + 'px';
+});
